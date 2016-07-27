@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+  <body class="home blog" id="hasfixed">
+
+	<jsp:include page="top.jsp" />
+    
+    <section class="focus">
+      <div class="central">
+        <div class="toptip"><a href="${webapp.url}index">网站首页</a>&gt;TagCloud</div>
+      </div>
+    </section>
+    
+    <section class="central container">
+      <div class="content-wrap">
+        <div class="content">
+	   <article class="article">
+		<header class="article-header">
+			<h1 class="article-title">TagCloud</h1>
+		</header>
+		<p class="article-meta"></p>
+		<div class="article-entry"><div class="tags-cloud">
+					<c:forEach var="tag" items="${tags}">
+						<a class="tag-name tag-name-size-0" title="0" href="${webapp.url}index?t=${tag.name}">${tag.name}(${tag.size})</a>
+					</c:forEach>
+		</div></div>
+		</article>
+		
+        </div>
+      </div>
+      
+      	<!-- right 右边部分 START -->
+    		<jsp:include page="right.jsp"/>
+      	<!-- right 右边部分  END-->
+    </section>
+    <section class="showlinks">
+      <div class="central">
+        <ul class="showlink">
+          
+        </ul>
+      </div>
+    </section>
+    <jsp:include page="bottom.jsp"/>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+@charset "utf-8";
+html{margin:0;padding:0;_text-overflow:ellipsis;}
+body{margin:0;padding:0;font-family:"\5b8b\4f53","\65B0\5B8B\4F53","arial";}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p,button,img,button,select,iframe{padding:0;margin:0;border:0;}
+img,input,button,select,textarea,fieldset,iframe{vertical-align:top;*vertical-align:middle;}
+ul,li{list-style-type:none;}
+hgroup{clear:both;overflow:hidden;}
+.bai{color:#fff;}
+.hei{color:#000}
+.none{display:none;}
+.fl{float:left;}
+.fr{float:right;}
+.clearfix{display:block;clear:both;}
+.clearfix{*zoom:1;}
+.clearfix:after{display:block; overflow:hidden;clear:both;height:0;visibility:hidden;content:".";}
+.clearfix:before{display:block; overflow:hidden;clear:both;height:0;visibility:hidden;content:".";}
+.h0{height:0;}/*内容块清除浮动专用*/
+.h10{height:10px;}/*间隔高勿删*/
+.h15{height:15px;}/*间隔高勿删*/
+.h20{height:20px;}/*间隔高勿删*/
+.h25{height:25px;}/*间隔高勿删*/
+.h30{height:30px;}/*间隔高勿删*/
+
+hgroup h2.fr{font-weight:normal;}
+.ul-bor{border-bottom:1px dashed #e4e4e4}
+input:-webkit-autofill{box-shadow:0 0 0 1000px white inset;}/*清除表单自完成背景*/
+em,a{font-style:normal;transition:all .6s;}
+.art-tab .hd a{transition:none;}
+
+/*其他*/
+.jz,.bd img{/*图片加载*/
+	background:url(../sucai/bx_loader.gif) center center no-repeat #fff;
+	
+}
+.jz{
+	border:1px solid #CCC;
+	padding:1px;
+	transition:all .5s;
+}
+.jz:hover{
+	box-shadow:0 0 5px #999;
+}
+.lb li{/*列表标点*/
+	background:url(../sucai/biaodian.gif) no-repeat left center;
+	padding-left:10px;
+}
+.pngbg{/*背景半黑*/
+    background:rgba(0,0,0,.6)!important;/*ie9+any*/
+	background:#000;/*ie678*/
+	filter:alpha(opacity=60);/*ie6789*/
+	/*_background:url(../sucai/tubg.png);/*ie6*/
+}
+:root .pngbg {filter:alpha(opacity=100)\9;/*ie9*/}
+/*多栏居中通用*/
+.list-cn{
+	text-align:center;
+	font-size:0;
+}
+.list-left{
+	text-align:left;
+	font-size:0;
+}
+.list-cn li{
+	font-size:12px;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+}

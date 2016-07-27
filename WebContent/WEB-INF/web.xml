@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns:javaee="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_4.xsd">
+  <display-name>Archetype Created Web Application</display-name>
+    <jsp-config>
+        <taglib>
+            <!-- 此处uri可以自己随便定义，但后面用时一定与这里一样 -->
+            <taglib-uri>
+               http://dragonyun.com/jsp/taglib
+            </taglib-uri>
+            <!-- tld文件的路径 -->
+            <taglib-location>
+                /WEB-INF/tld/function.tld
+            </taglib-location>
+        </taglib>
+    </jsp-config>
+    <filter>
+        <filter-name>encoding</filter-name>
+        <filter-class>org.jiucheng.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter>
+        <filter-name>jiucheng</filter-name>
+        <filter-class>org.jiucheng.web.filter.DispatcherFilter</filter-class>
+        <init-param>
+            <param-name>cfg</param-name>
+            <param-value>jiucheng.cfg.xml</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>jiucheng</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.html</location>
+    </error-page>
+</web-app>

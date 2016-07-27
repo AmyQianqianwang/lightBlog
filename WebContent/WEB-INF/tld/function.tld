@@ -1,0 +1,18 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd"  
+    version="2.0">
+    <!-- 标记库版本信息要有 -->  
+    <tlib-version>1.0</tlib-version>  
+    <!-- 取绝对值 -->  
+    <function>  
+        <name>abs</name>  
+        <function-class>java.lang.Math</function-class>  
+        <function-signature>int abs(int)</function-signature>
+    </function>
+    <function>
+    	<name>page</name>
+    	<function-class>in.wenwen.util.PageUtil</function-class>
+    	<function-signature>java.lang.String page(java.lang.String, long)</function-signature>
+    </function>
+</taglib>

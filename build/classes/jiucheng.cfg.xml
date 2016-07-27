@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>jiucheng.cfg.xml</comment>
+    
+    <entry key="jiucheng.version">0.0.1</entry>
+    <entry key="jiucheng.scanner.package">in.wenwen</entry>
+    <entry key="jiucheng.log">F</entry>
+    
+    <entry key="jdbc.driverClassName">com.mysql.jdbc.Driver</entry>
+    <entry key="jdbc.url">jdbc:mysql://127.0.0.1:3306/dragonyun?useUnicode=true&amp;characterEncoding=utf8</entry>
+    <entry key="jdbc.username">root</entry>
+    <entry key="jdbc.password">123456</entry>
+    
+    <entry key="jdbc.filters">stat</entry>
+    <entry key="jdbc.initialSize">1</entry>
+    <entry key="jdbc.minIdle">1</entry>
+    <entry key="jdbc.maxActive">3</entry>
+    <entry key="jdbc.maxWait">60000</entry>
+    
+    <entry key="jdbc.timeBetweenEvictionRunsMillis">30000</entry>
+    <entry key="jdbc.minEvictableIdleTimeMillis">300000</entry>
+    
+    <entry key="jdbc.validationQuery">SELECT 1</entry>
+    <entry key="jdbc.testWhileIdle">true</entry>
+    <entry key="jdbc.testOnBorrow">false</entry>
+    <entry key="jdbc.testOnReturn">false</entry>
+    <entry key="jdbc.poolPreparedStatements">false</entry>
+    <entry key="jdbc.maxPoolPreparedStatementPerConnectionSize">200</entry>
+    
+    <entry key="jdbc.removeAbandoned">true</entry>
+    <entry key="jdbc.removeAbandonedTimeoutMillis">1800000</entry>
+    
+    <entry key="context">/</entry>
+    <entry key="suffix">.jsp</entry>
+    
+    <entry key="smtp.host">smtp.qq.com</entry>
+    <entry key="smtp.port">25</entry>
+    <entry key="smtp.username">1414970078@qq.com</entry>
+    <entry key="smtp.password">QQ密码</entry>
+    <entry key="smtp.charset">UTF-8</entry>
+    <entry key="smtp.fr">1414970078@qq.com</entry>
+<!--     <entry key="smtp.fr">kf@jiucheng.org</entry> -->
+    <entry key="smtp.nick">龙云研讨社区</entry>
+</properties>
